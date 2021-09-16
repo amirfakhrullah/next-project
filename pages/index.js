@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -31,6 +32,20 @@ export default function Home() {
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
+
+          <Link href="/posts/123">
+            <a>Posts 123</a>
+          </Link>
+
+          <Link href="/posts/123/conmsdwa">
+            <a>Posts 123 comment</a>
+          </Link>
+
+          <Link href="/test/asddsa/asdfdssd">
+            <a>Test</a>
+          </Link>
+
+          {/* encodeURIComponent(slug) is used in the example to keep the path utf-8 compatible. */}
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
